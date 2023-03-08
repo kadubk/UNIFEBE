@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--dentro de "head" fica todas as tags não visuais, como o title .-->
+        <meta charset="utf-8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title></title> <!--dentro de "head" fica todas as tags não visuais, como o title .-->
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+        <link rel="stylesheet" href="./styles.css" /> <!--separar o css em outra pasta-->
+    </head>
+    <body> <!--body: é o que esta visivel e escrito dentro do site.-->
+        <body>
+            <!--TÍTULO ESBOÇO-->
+            <div>
+                <h1>o título mais importante</h1>
+                <h2>1 e 2 são os principais</h2>
+                <h3>sub-títulos</h3>
+                <h4>títulos menores</h4>
+                <h5>pequenos</h5>
+                <h6>pequenos</h6>
+                <span>
+                    <!--descriçao de algo, textos-->
+                    <!--tag para deixar em italico--> <i>escrita em italico</i> <br/>
+                    <!--tag para deixar negrito--> <b>escrita em negrito</b> <br/>
+                </span>
+                    <!--parágrafo de texto--> <p>parágrafo de texto</p>
+                    <br/> <!--"br" (brakeroll/quebra de linha) para deixar em baixo.-->
+            </div>
+            <div class="pai">
+                <div class="filho"> 
+                </div>
+            </div>
+            <header class="header2" > <!--extrutura inicial de uma navegação:-->
+                <nav>
+                    <ul>
+                        <!-- tag <a> (ancora) tudo nela se torna clicavel.
+                        HREF para redirecionar para outra página.
+                        (target="blanck") para abrir em uma nova janela. -->
+                        <a href="https://google.com">
+                        <li>home</li>
+                        </a>
+                        <li>contato</li>
+                        <li>fotos</li>
+                    </ul>
+                </nav>
+            </header>
+            <header class="header1" id="headerum" >
+                <nav>
+                    <ul>
+                        <a href="./treino.html" target="_blank">
+                        <li>home</li>
+                        </a>
+                        <li>contato</li>
+                        <li>fotos</li>
+                    </ul>
+                </nav>
+            </header>
+        </body>
+
+        <form action="./index.html">
+                
+            <label for="email">email</label>
+            <input id="email" type="email" name="email" placeholder="insira aqui" />
+
+            <label for="password">senha</label>
+            <input id="password" type="password" name="password" />
+            
+            <label for="radio">masculino</label>
+            <input id="radio" type="radio" name="sexo" value="masculino" />
+
+            <label for="radio">feminino</label>
+            <input id="radio" type="radio" name="sexo" value="feminino"/>
+
+            <label for="radio">outro</label>
+            <input id="radio" type="radio" name="sexo" value="outro"/>
+
+            <label for="checkbox">termo</label>
+            <input id="checkbox" type="checkbox" name="checkbox"/>
+
+            <label for="range">satisfação</label>
+            <input id="range" type="range" name="range"/>
+
+            <label for="file">arquivo</label>
+            <input id="file" type="file" name="file"/>
+
+            <label for="date">data</label> 
+            <input id="date" type="date" name="date" />
+
+            <select name="dia da semana"/>
+                <optio value="domingo">domingo</optio>
+                <optio value="segunda">segunda</optio>
+                <optio value="terça">terça</optio>
+                <optio value="quarta">quarta</optio>
+                <optio value="quinta">quinta</optio>
+            </select>
+
+            <textarea id="menssagem" name="menssagem" row="10"></textarea>
+            <button>enviar</button>
+            <!--apenas usar "style=display:block" se precisar-->
+        </form>
+        <!-- atributos servem principalmente para personalizar e adicionar funcionalidades a uma tag html -->
+         <!-- existem diversoso atributos para tags e muitas tags tem seus proprios atributos. -->
+         <!-- alguns atributos em comums entre as tags: -->
+         <!--
+            class="..." = atribui uma classe ao elemento (uma classe pode ser utilizada para um ou mais elementos):
+            id="..." = atribui um id ao elemento(um id deve ser unico, ou seja, atribuido a um unico elemento):
+            style="..." = permite incluir elemnttos css (estilos) dentro da tag:
+            lang="..." = define o idioma principal do elemneto:
+            tittle="..."define o titulo do elemento:
+            alt="..." = define um texto alternativo e por isso é muito utilizado em imagens:
+            hidden="..."oculta o elemnto:
+            disabled= desabilita o input.-->       
+         <!--informacoes: 
+         label= nome do que se trata./ definir o qe será.
+         type= sobre o que será o "input", email, senha, número etc...
+         input= inserir dados, cadastro, login etc...
+         id= para onde será enviado as informações.
+         style="display": block= para deixar embaixo e nao deixar ficar um ao lado do outro.
+         name= nome.
+         placeholder= deixa escrito no bloco para escrever o que eu quiser.
+         radio: para selecionar apenas um dentre outras opcoes
+         checkbox: para selecionar varios (aceitar verios termos) --> 
+        <body>
+            <!--usar (<>) para nao aparecer no site-->
+            <!--usar: img(imagem) e puxar tal com a tag (src).
+            video e audio usar (source). (controls) servindo para acessar os controles de pausar e etc-->
+            <img src="./onepieceredbr-destacada.webp" style="display:block;" />
+            <video controls style="width:50%; border-radius: 10px;" >
+                <source src="" type="video/mp4">
+            </video>
+            <audio controls>
+                <source src="" type="audio/mpeg">
+            </audio>
+                <!--um pouco de javascript-->
+            <button onclick="document.getElementById('player').play()">play</button>
+            <button onclick="document.getElementById('player').pause()">pause</button>
+                <!-- <button onclick="document.getElementById('player').pause()">pause</button> --> <!--ex-->
+                <!-- ctrl K + ctrl C para comentar um código, deixando ele desfuncional para nao apagar-->
+            <iframe src=""></iframe>
+                <!--inframe usado para puxar o conteudo de outra pasta html-->
+        </body>
+    </body>
+
+</html>
