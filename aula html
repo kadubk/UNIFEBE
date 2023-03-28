@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav></nav>
+    <h1>formularios</h1>
+    <form action="" method="get">
+    <fieldset>
+        <legend>meu primeiro formulario</legend>
+
+        <label for="email">email</label>
+        <input id="email" type="email" name="email" placeholder="insira aqui" /> <br> 
+
+        <label for="email">email</label>
+        <input id="email" type="email" name="email" value="@unifebe"><br> 
+
+        <label for="nome">nome</label>
+        <input id="nome" name="nome" type="text"> <br>
+
+        <label for="password">senha</label>
+        <input id="password" type="password" name="password"> <br>
+
+        <label for="radio">masculino</label>
+        <input id="radio" type="radio" name="sexo" value="masculino" /> <br>
+
+        <label for="radio">feminino</label>
+        <input id="radio" type="radio" name="sexo" value="feminino"/> <br>
+
+        <label for="radio">outro</label>
+        <input id="radio" type="radio" name="sexo" value="outro"/> <br>
+
+        <label for="checkbox">caixa de escolha</label>
+        <input id="checkbox" type="checkbox" name="checkbox"> <br>
+
+        <label for="range">satisfação</label>
+        <input id="range" type="range" name="range"> <br>
+
+        <label for="file">arquivo</label>
+        <input id="file" type="file" name="file"> <br>
+
+        <label for="date">data</label> 
+        <input id="date" type="date" name="date"> <br>
+
+        <select name="" id="">
+                <option value="segunda">segunda</option>
+                <option value="terça">terça</option>
+                <option value="quarta">quarta</option>
+                <option value="quinta">quinta</option>
+                <option value="quinta">sexta</option>
+            <optgroup label="finais de semana">
+                <option value="domingo">domingo</option>
+                <option value="sabado">sabado</option>
+            </optgroup>
+        </select>  <br> <br>
+
+        <textarea name="avaliação" id="avaliação" cols="30" rows="10"></textarea>
+        <br>
+
+        <!--datalist-->
+        <label for="navegador"></label>
+        <input type="text" list="browser">
+        <datalist id="browser">
+            <option value="internet explore"></option>
+            <option value="firefox"></option>
+            <option value="edge"></option>
+        </datalist> <br>
+
+        <input type="submit" value="submiter">
+    </fieldset>
+</body>
+</html>
