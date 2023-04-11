@@ -1,0 +1,87 @@
+div {
+    /* borda */
+    border-style: solid;
+    border-width: 50px;
+    border-color: red;
+    border-radius: 15px;
+    /* margem */
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-right: 100px;
+    
+
+    /* padding*/
+    padding-left: 500px;
+     
+    outline-style: solid;
+    outline-offset: 10px;
+    outline-color: 15px;
+    outline-color: blue;
+
+    /* tamanho */
+    width: 300px;
+    height: 300px;
+}
+.pai{
+    border-bottom-style: 50px ; 
+    border:7px solid green;
+}
+h1 {
+    color: blue
+}
+nav{
+    background-color: rgb(46, 196, 138);
+    padding: 25px;
+    font-size: 30px;
+}
+a{
+    margin-right: 30px;
+}
+body{
+    margin: 0px;
+}
+a:link{
+    color:aqua;
+    text-decoration: none;
+}
+a:hover{
+    color: chartreuse;
+}
+a:active{
+    color: rgb(205, 50, 135);
+}
+div:hover{
+    background-color: black;
+}
+
+
+
+html da pagina
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <a href="#inicio">home</a>
+        <a href="#produtos">produtos</a>
+        <a href="#contatos">contatos</a>
+    </nav>
+    <div>
+        <h1>CSS</h1>
+        <p>parágrafo</p>
+    </div>
+    <div class="pai">
+        <h1>CSS</h1>
+        <p>parágrafo</p>
+    </div>
+</body>
+</html>
